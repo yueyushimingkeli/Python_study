@@ -4,7 +4,7 @@ import sys
 from io import StringIO
 from email.generator import Generator
 import codecs
-import this
+# import this
 
 
 """
@@ -31,8 +31,23 @@ print(text)
 
 
 # try 003  That was not perfect But it works
-zen_of_python = codecs.encode(this.s, 'rot13')
-print(zen_of_python)
+# zen_of_python = codecs.encode(this.s, 'rot13')
+# print(zen_of_python)
+
+a = 1_000_000
+b = 2
+print(a)
+print(a/b)
+
+c = 10/3
+# 左对齐 长度为10
+print("{:<10.2f}abc".format(c))
+print("{:<10.2f}1".format(1000))
+
+# 右对接 长度为10
+print("{:>10.2f}".format(c))
+print("{:>10.2f}".format(1000))
+
 
 #well done
 
