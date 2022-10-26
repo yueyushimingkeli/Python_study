@@ -22,5 +22,5 @@ def greeter():
 
 
 if __name__ == '__main__':
-    # work1()
+    work1()
     pass
