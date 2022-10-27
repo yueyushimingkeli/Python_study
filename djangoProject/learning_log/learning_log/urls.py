@@ -18,6 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('users/', include('users.urls')),
     # 配置子路由, 当没有后缀时
     path('', include('learning_logs.urls')),
 ]
