@@ -29,7 +29,7 @@ def topics(request):
 def topic(request, topic_id):
     """topic 详细信息"""
     topic = Topic.objects.filter(id=topic_id).first()
-    if  not check_topic_owner(request, topic):
+    if not check_topic_owner(request, topic):
         return render(request, 'learning_logs/404.html')
     entries = topic.entry_set.order_by('-date_added')
     print(entries)
